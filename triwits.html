@@ -1,0 +1,1233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+      <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+  integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+      .box-one{
+    max-width: 100%;
+    margin: auto;
+    padding: auto;
+}
+
+
+.nav-btn{
+    border: none;
+    background: none;
+    color: white;
+    padding: 20px 0;
+}
+
+.nav-col{
+    padding:0px 20px;
+}
+
+ /* Explore */
+ .explore:hover{
+      background-color: #51c7e2;
+      color: white;
+      
+    }
+    /* TEAM */
+    .TEAM img:hover{
+      transition: 0.3s;
+	transform: scale(1.03);
+    }
+    /* LOGOS icons */
+    .LOGOS a{
+      color: #51c7e2;
+      
+    }
+    .LOGOS a:hover{
+      color: #217487;
+    }
+
+    /* Careers  */
+
+    .BtnJI .JI{
+          color: white;
+          border: 1px solid #217487 ;
+          padding: 10px 15px;
+          margin: 0px 2px;
+          text-decoration: none;
+          background:none;
+        }
+        .BtnJI .JI:hover{
+          color: white;
+          background-color: #086c82;
+
+        }
+        ::selection {
+  color: #fff;
+  background: #51C7E2;
+}
+#NAVBARbtn{
+  padding-top: 15px;  
+  display: none;
+  font-size: 25px;
+
+  }
+
+@media only screen and (max-width:600px){
+  .box-two{
+    display: none;
+    width: 100%;
+  }
+ #NAVBARbtn{
+  display: flex;
+ }
+ #Navbar button{
+  font-size : 16px;
+  padding: 10px;
+  text-align: end;
+ }
+}
+
+@media only screen and (max-width:860px){
+  .box-two{
+    display: none;
+    width: 100%;
+  }
+ #NAVBARbtn{
+  display: flex;
+ }
+ #Navbar button{
+  font-size : 16px;
+  padding: 10px;
+  text-align: end;
+ }
+}
+
+    </style>
+</head>
+<body>
+<div class="container-fluide ps-4" style="background-color: black">
+  <div class="container box-one"  style=" color: #ffffff; display: flex; justify-content: space-between;">
+    <div class="logoo"><img src="img/triwits-logo.png" alt="" style="width: 35%; padding: 10px 0;"></div>
+    
+    <i id="NAVBARbtn" onclick="show()" class="fa-solid fa-bars"></i>
+
+    <div class="box-two" id="Navbar"  >
+        <div class="row g-0">
+          <div class="col text-center nav-col feedbtn">
+          <button class="nav-btn home-btn">HOME</button>
+          </div>
+          <div class="col text-center nav-col">
+              <button class="nav-btn Services-btn">SERVICES</button>
+              </div>
+          <div class="col text-center nav-col">
+           <button class="nav-btn Poject-btn" >Poject<span style="padding-left: 5px;">Planner</span></button>
+          </div>
+          <div class="col text-center nav-col">
+           <button class="nav-btn Carees-btn">Careers</button>
+          </div>
+          <div class="col text-center nav-col ">
+          <button class="nav-btn Contact-btn">CONTACT<span style="padding-left: 5px;">US</span></button>
+          </div>
+        </div>
+      </div>
+  
+  </div>
+</div>
+
+<!-- Content  -->
+<!-- Home Section ------ -->
+
+
+  <section class="Home">
+
+     <!-- Web Devlopment -->
+<div class="container-fluid text-light pt-5 pb-5" style="background-color:#09181e;">
+  <div class="row text-center pb-5 mt-5">
+    <div class="col-md-12 pt-5 pb-3">
+      <img src="img/triwits-badge-new24.png" alt="">
+    </div>
+    <div class="col-md-12">
+      <div class="h1" style="font-size: 3rem;">Web Development</div>
+    </div>
+    <div class="col-md-12">
+      <div class="h6">We have developed Advanced Web Solutions, Enterprise Web Apps, and a fleet of websites.</div>
+    </div>
+    <div class="col mb-5 pt-3 pb-5">
+      <a href="#exp" class="btn btn-outline-light explore ps-4 pe-4 ">Explore Us</a>
+    </div>
+  </div>
+</div>
+
+<!-- Second Explore  -->
+<div class="container-fluid text-light pb-5 pt-5" id="exp" style="background-color:#1e2021;">
+  <div class="row pb-5">
+    <div class="col-md-6 col-sm-6 col-xs-12 pt-5" >
+      <img src="img/web-developement-image-triwits.png" class="w-100" alt="">
+    </div>
+    <div class="col-md-6 p-5">
+      <div class="h1">We Create Website That Convert And Sell</div>
+      <div class="p">
+        1. Have a project to discuss?
+        <br>
+        2. Together, we can develop a plan to grow your business to the next level.
+        <br>
+        3. Great development process starts with detailed planning. Our professionals understand and analyze your business requirements and design accordingly. Once the client approves the website design, we start the website development process.
+        <br>
+        4. We offer six months of free website maintenance to the website we develop and provide maintenance services for the websites developed by other agencies.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Our Client -->
+<div class="container-fluid p-5" style="background-color: #262e30;">
+  <div class="owl-carousel owl-theme">
+    <div class="item">
+      <img src="img/owl1.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl2.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl3.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl14.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl5.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl6.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl7.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl8.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl9.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl10.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl11.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl12.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl13.jpeg" alt="">
+    </div>
+    <div class="item">
+      <img src="img/owl14.jpeg" alt="">
+    </div>
+</div>
+</div>
+<!-- Countries  -->
+<div class="container-fluid text-center text-light pt-5 pb-5" style="background-color: #191d1f;">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="h1">Countries <span style="color: #51c7e2;">We Work With</span></div>
+    </div>
+    <div class="col-md-6 d-flex " >
+      <div class="card p-4" style="width: 18rem; background: none;">
+        <img src="img/united-states.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">United States</p>
+        </div>
+      </div>
+
+      <div class="card p-4" style="width: 18rem;background: none;">
+        <img src="img/australia.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Australia</p>
+        </div>
+      </div>
+      </div>
+      <div class="col-md-6 d-flex">
+      
+      <div class="card p-4" style="width: 18rem;background: none;">
+        <img src="img/canada.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Canada</p>
+        </div>
+      </div>
+      
+      <div class="card p-4" style="width: 18rem; background: none;">
+        <img src="img/Afghanistan.jpeg" class="card-img-top " alt="...">
+        <div class="card-body">
+          <p class="card-text">Afghanistan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Herjit text  -->
+<div class="container-fluid text-light text-center pt-5 pb-5 " style="background-image:url(img/p2.jpeg);background-size: cover;background-attachment: fixed;" >
+  <div id="carouselExampleSlidesOnly" class="carousel slide p-5" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="h5">Mazhar Inamdar</div>
+        <div class="p">(Direct of Equiventas)</div>
+        <div class="p">sep 08,2018</div>
+        <br>
+        <div class="h6">Without web designing & Devlopment, we would have gone <br> bankrupt by now.Really good.Triwits impressed me on <br> multipel levels. We,re loving it.</div>
+      </div>
+      <div class="carousel-item">
+        <div class="h5">Mallikarjun Hatti </div>
+        <div class="p">(Owner of Hotel Siridhanya Darshini)</div>
+        <div class="p">sep 10, 2018</div>
+        <br>
+        <div class="h6">Triwits Technologies is truly upstanding and is behind its <br> product 100%. We can't understand how hotel owners been <br> living without Website. If you aren't sure, always go for Website <br> for Recipes.</div>
+     
+      </div>
+      <div class="carousel-item">
+        <div class="h5">Mazhar Inamdar</div>
+        <div class="p">(Direct of Equiventas)</div>
+        <div class="p">sep 08,2018</div>
+        <br>
+        <div class="h6">If you want real marketing that works and <br>effective implementation - web development's got you covered. I STRONGLY <br>recommend web development to EVERYONE interested in running a <br> successful online business! Thanks guys, keep up the good <br>work! We've seen amazing results already.</div>
+     
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- team  -->
+<div class="container-fluid bg-dark pt-5 pb-5 ps-5 TEAM">
+  <div class="row text-light  ">
+    <div class="col-md-12 text-center pb-5">
+      <div class="h1">Our <span style="color: #51c7e2;">Team</span></div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card" style="width: 20rem; border: none;">
+        <img class="img-responsive" src="img/Naveed-Nathan.jpeg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262e30;">
+          <p class="card-text">Naveed Nagthan</p>
+           <p style="font-size: 12px;">A Creative Thinker, An Innovative Entrepreneur and Marketing Researcher.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card" style="width: 20rem; border: none;">
+        <img src="img/Veena-Deshpande.jpeg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262e30;">
+          <p class="card-text">Veena Deshpande </p> 
+          <p style="font-size: 12px;">She is an extrovert who has strengthened the company with her exceptional vision.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="card" style="width: 20rem; border: none;">
+        <img src="img/team.jpeg" class="card-img-top" alt="...">
+        <div class="card-body" style="background-color: #262e30;">
+          <p class="card-text p-2">Team </p> 
+          <p style="font-size: 12px;">Whole work teams are the basic building block of a healthy working environment. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Want to contact  -->
+<div class="container-fluid text-light text-center p-5 " style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/triwits-logo.png') ;background-attachment: fixed;;">
+  <div class="row p-5">
+    <div class="col-md-12  pb-5 pt-5">
+      <div class="h3 pb-3">Want to know more..</div>
+      <a href="#" id="CONTACT-btn3"  class="btn btn-outline-dark" style="background-color: #51c7e2; border: none;">CONTACT US</a>
+    </div>
+  </div>
+</div>
+<!-- logos -->
+<div class="container-fluid p-2 bg-dark">
+  <div class="d-flex bd-highlight ps-5 pe-5">
+    <div class="p-2 flex-grow-1 bd-highlight LOGOS" style="font-size: 1.5rem;">
+     <a href="https://in.linkedin.com/company/triwits"><i class="fa-brands fa-linkedin pe-3"></i></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthetriwits"><i class="fa-brands fa-twitter pe-3"></i></a>  <a href="https://www.facebook.com/triwitstech/timeline/?ref=hl"><i class="fa-brands fa-facebook-f pe-3"></i></a> <a href="https://www.instagram.com/thetriwits/"><i class="fa-brands fa-square-instagram pe-3"></i></a> <a href="https://api.whatsapp.com/send/?phone=919620030308&text=Hello&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp pe-3"></i></a>
+    </div>
+    <div class="p-2 bd-highlight text-light ">Copyright @2023 All rights reserved [This template is made by Mr.Shahid-Nadaf</div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+  </section>
+
+ <!-- Service Page  -->
+    <section class="Services">
+
+         <!-- Web Devlopment -->
+         <div class="container-fluid text-light pt-5 pb-5" style="background-color:#09181e;">
+          <div class="row text-center pb-5 mt-5">
+            <div class="col-md-12 pt-5 pb-3">
+              <img src="img/triwits-badge-new24.png" alt="">
+            </div>
+            <div class="col-md-12">
+              <div class="h1" >Done 500+ Projects ERP / CRM Development</div>
+            </div>
+            <div class="col-md-12">
+              <div class="p">Our focus is on creating valuable solutions for our clients by creating innovative <br> software using breakthrough technology.
+              </div>
+            </div>
+            <div class="col mb-5 pt-3 pb-5">
+              <a href="#prj" class="btn btn-outline-light explore ps-4 pe-4 ">Explore Us</a>
+              <a href="#" class="btn btn-outline-light explore ps-4 pe-4 ">Want a Similar Project?</a>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Projects -->
+      
+      
+        <div class="container-fluid bg-dark p-5 prj">
+          <div class="row text-light  ">
+            <div class="col-md-12 text-center pb-5">
+              <div class="h1">Our <span style="color: #51c7e2;">Team</span></div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card" style=" border: none;">
+                <img class="img-responsive" src="img/s1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: #262e30;">
+                  <p class="card-text">Cold Storage & Raisins Management System</p>
+                   <p style="font-size: 12px;">Description: cold storage system : cold storage system helps in managing processes such as Packaging, washing, Neating, vendor management, storage facilities, etc. It also helps to maintain a decrease/increase in prices of the product creating storage locations and reports for the same.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card" style=" border: none;">
+                <img src="img/s2.jpeg" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: #262e30;">
+                  <p class="card-text">BPO CRM</p> 
+                  <p style="font-size: 12px;">Description: http://equicrm.tdc3030.com/: is a CRM platform designed dedicatedly for BPO agencies where admin can add prospects, scripts, agent Every call is tracked, recorded, and available with the lead details for real-time or random quality checks. And also assign targets to the agent.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="card" style=" border: none;">
+                <img src="img/s3.jpeg" class="card-img-top" alt="...">
+                <div class="card-body" style="background-color: #262e30;">
+                  <p class="card-text ">CAdministration For Institute</p> 
+                  <p style="font-size: 12px;">Description: https://imsdemo.tdc3030.com/: is All-in-one education CRM designed for colleges/schools to manage student details, admissions, exams, fees and a dedicated account section to keep the track of paid, unpaid, pending fees through weekly/monthly/ yearly fees reports.</p>
+                </div>
+              </div>
+            </div>
+      
+          <!-- Second row  -->
+          
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style=" border: none;">
+                  <img class="img-responsive" src="img/s4.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body " style="background-color: #262e30;">
+                    <p class="card-text">Jewellery Management System</p>
+                     <p style="font-size: 12px;">Description: Jewellery CRM is dedicatedly designed to cater the jeweler's needs. It allows adding jewellery items, their prices and helps you find more deals, leads, and gives more insights into sale/purchase reports. You will have the information about customers, including personal, transaction...
+                  </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style=" border: none;">
+                  <img src="img/s5.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body " style="background-color: #262e30;">
+                    <p class="card-text">Tractor Management</p> 
+                    <p style="font-size: 12px; padding-bottom: 2.1rem; ">Description: It is an CRM Application that facilitates purchase and sales of tractors, spare parts,lubricant, and attachment.This also keeps track payment history and reports</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                <div class="card" style="  border: none;">
+                  <img src="img/s6.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body" style="background-color: #262e30;">
+                    <p class="card-text ">Event Management System</p> 
+                    <p style="font-size: 12px; padding-bottom: 1rem ;">Description: Tazor : an event management application typically made up of client, agents, admin that reside in remote devices, a central component for gathering the events, an event database and a reporting system to deliver the results in various formats.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <!-- third row  -->
+          
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style=" border: none;">
+                    <img class="img-responsive" src="img/s7.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: #262e30;">
+                      <p class="card-text">Auction</p>
+                       <p style="font-size: 12px;">Online Auction management system is a web-based application that will assist clients with buying or selling items; they can sell anything they want by posting advertisements. This application will enable clients to post their items for auction; bidders can bid for any available product.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style=" border: none;">
+                    <img src="img/s8.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: #262e30;">
+                      <p class="card-text">Import And Export Management</p> 
+                      <p style="font-size: 12px; padding-bottom: 3.4rem; ">Description: It is an CRM Application that facilitates purchase and sales of different kind of goods related to fruits, This also provides stock management</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style="  border: none;">
+                    <img src="img/s9.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #262e30;">
+                      <p class="card-text ">CCA Publication</p> 
+                      <p style="font-size: 12px; padding-bottom: 4.5rem ;">Description: It is an online portal that facilitates selling of book and Keep track of stock and payment details</p>
+                    </div>
+                  </div>
+                </div>
+      
+                <!-- fourth row  -->
+      
+              <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style=" border: none;">
+                    <img class="img-responsive" src="img/s10.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: #262e30;">
+                      <p class="card-text">Construction Site Management</p>
+                       <p style="font-size: 12px;">Description: construction.triwits.com: [Cfolios ] is one stop solution for all your construction needs where it allows user to add all the construction materials, project budget, expenses, number of labors required and their salary. It also generates invoices /reports for the same .</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style=" border: none;">
+                    <img src="img/11.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body " style="background-color: #262e30;">
+                      <p class="card-text">Sapling Management</p> 
+                      <p style="font-size: 12px; padding-bottom:1.3rem; ">Description: t is an CRM Application that facilitates sales of different kind of sapling, This also provides stock management, order management and keep track of payment details</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                  <div class="card" style="  border: none;">
+                    <img src="img/s12.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body" style="background-color: #262e30;">
+                      <p class="card-text ">CCA Publication</p> 
+                      <p style="font-size: 12px; padding-bottom: 3.5rem ;">Description: It is an online portal that facilitates selling of book and Keep track of stock and payment details</p>
+                    </div>
+                  </div>
+                </div>
+      
+      
+      </div>
+      </div>
+      
+      <!-- Project Planner   -->
+      <div class="container-fluid  text-light p-5" style="background-color: #262e30;">
+          <div class="container">
+              <div class="h1 text-center pb-4"> Projects <span style="color: #51c7e2;">Planner</span></div>
+          </div>
+          <div class="row INP">
+              <div class="col-md-6">
+                  <div class="row" >
+                    <div class="col">
+                      <div class="h3">Personal Information</div>
+                    </div>
+                      <div class="col-md-12 p-2 ">
+                        <input type="text" class="form-control" placeholder="First name" aria-label="Your name">
+                      </div>
+                      <div class="col-md-12 p-2">
+                        <input type="text" class="form-control" placeholder="Last name" aria-label="Your Email">
+                      </div>
+                      <div class="col-md-12 p-2">
+                        <input type="number" class="form-control" placeholder="Phone Number" aria-label="Your Email">
+                      </div>
+                      <div class="col-md-12 p-2">
+                          <input type="text" style="padding-bottom: 5rem;" class="form-control" placeholder="Message" aria-label="Last name">
+                        </div>
+                        <div class="col-md-12 p-2">
+                          <a href="#" class="btn btn-outline-dark" type="button" style="background-color: #51c7e2;"> SUBMIT</a>
+                        </div>
+                    </div>
+              </div>
+              <div class="col">
+                <div class="h3">Modules Required</div>
+                <div class="row">
+                  <div class="col-md-6 p-4">
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        HR
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Quotation& Invoice
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Day Book
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Transport Management
+                      </label>
+                    </div>
+                  </div>
+      
+                  <div class="col p-4">
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Sales
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Stock & Inaventory
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        Accounts
+                      </label>
+                    </div>
+                    <div class="form-check pb-2">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Access Contol
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </div>
+      
+      
+      
+      <!-- Want to contact  -->
+      <div class="container-fluid text-light text-center p-5 " style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/triwits-logo.png') ;background-attachment: fixed;;">
+        <div class="row p-5">
+          <div class="col-md-12  pb-5 pt-5">
+            <div class="h3 pb-3">Want to know more..</div>
+            <a href="#" id="CONTACT-btn2" class="btn btn-outline-dark" style="background-color: #51c7e2; border: none;">CONTACT US</a>
+          </div>
+        </div>
+      </div>
+      <!-- logos -->
+      <div class="container-fluid p-2 bg-dark">
+        <div class="d-flex bd-highlight ps-5 pe-5">
+          <div class="p-2 flex-grow-1 bd-highlight LOGOS" style="font-size: 1.5rem;">
+           <a href="https://in.linkedin.com/company/triwits"><i class="fa-brands fa-linkedin pe-3"></i></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthetriwits"><i class="fa-brands fa-twitter pe-3"></i></a>  <a href="https://www.facebook.com/triwitstech/timeline/?ref=hl"><i class="fa-brands fa-facebook-f pe-3"></i></a> <a href="https://www.instagram.com/thetriwits/"><i class="fa-brands fa-square-instagram pe-3"></i></a> <a href="https://api.whatsapp.com/send/?phone=919620030308&text=Hello&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp pe-3"></i></a>
+          </div>
+          <div class=" p-2 bd-highlight text-light "> Copyright @2023 All rights reserved [This template is made by Mr.Shahid-Nadaf</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Planner   -->
+  <section class="Poject">
+<div class="container-fluid  text-light p-5" style="background-color: #262e30;">
+  <div class="container">
+      <div class="h1 text-center pb-4"> Projects <span style="color: #51c7e2;">Planner</span></div>
+  </div>
+  <div class="row INP">
+      <div class="col-md-6">
+          <div class="row" >
+            <div class="col">
+              <div class="h3">Personal Information</div>
+            </div>
+              <div class="col-md-12 p-2 ">
+                <input type="text" class="form-control" placeholder="First name" aria-label="Your name">
+              </div>
+              <div class="col-md-12 p-2">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Your Email">
+              </div>
+              <div class="col-md-12 p-2">
+                <input type="number" class="form-control" placeholder="Phone Number" aria-label="Your Email">
+              </div>
+              <div class="col-md-12 p-2">
+                  <input type="text" style="padding-bottom: 5rem;" class="form-control" placeholder="Message" aria-label="Last name">
+                </div>
+                <div class="col-md-12 p-2">
+                  <a href="#" class="btn btn-outline-dark" type="button" style="background-color: #51c7e2;"> SUBMIT</a>
+                </div>
+            </div>
+      </div>
+      <div class="col">
+        <div class="h3">Services Required</div>
+        <div class="row">
+          <div class="col-md-6 p-4">
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                CRM
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Mobile App
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Website
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Contact Management 
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Encommerce Web Design
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Logo Design
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                SEO
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Social Media Optmization
+              </label>
+            </div>
+
+          </div>
+
+          <div class="col p-4">
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Custom Software
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Pay Per Click
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                Branding Solution
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Strategy Consulating 
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                PHP Web Devlopment 
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                Email Marketing
+              </label>
+            </div>
+            <div class="form-check pb-2">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+              <label class="form-check-label" for="flexCheckChecked">
+                  Social Media Marketing 
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+
+<!-- Want to contact  -->
+<div class="container-fluid text-light text-center p-5 " style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/triwits-logo.png') ;background-attachment: fixed;;">
+<div class="row p-5">
+  <div class="col-md-12  pb-5 pt-5">
+    <div class="h3 pb-3">Want to know more..</div>
+    <a href="#" class="btn btn-outline-dark" id="CONTACT-btn1" style="background-color: #51c7e2; border: none;">CONTACT US</a>
+  </div>
+</div>
+</div>
+<!-- logos -->
+<div class="container-fluid p-2 bg-dark">
+<div class="d-flex bd-highlight ps-5 pe-5">
+  <div class="p-2 flex-grow-1 bd-highlight LOGOS" style="font-size: 1.5rem;">
+   <a href="https://in.linkedin.com/company/triwits"><i class="fa-brands fa-linkedin pe-3"></i></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthetriwits"><i class="fa-brands fa-twitter pe-3"></i></a>  <a href="https://www.facebook.com/triwitstech/timeline/?ref=hl"><i class="fa-brands fa-facebook-f pe-3"></i></a> <a href="https://www.instagram.com/thetriwits/"><i class="fa-brands fa-square-instagram pe-3"></i></a> <a href="https://api.whatsapp.com/send/?phone=919620030308&text=Hello&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp pe-3"></i></a>
+  </div>
+  <div class=" p-2 bd-highlight text-light "> Copyright @2023 All rights reserved [This template is made by Mr.Shahid-Nadaf</div>
+</div>
+</div>
+  </section>
+   
+  <!-- ======================Career Devlopment ===================-->
+    <section class="Carees">
+
+<div class="container-fluid text-light pt-5 pb-5" style="background-color:#09181e;">
+  <div class="row text-center pb-5 mt-5">
+    <div class="col-md-12 pt-5 pb-3">
+      <img src="img/triwits-badge-new24.png" alt="">
+    </div>
+    <div class="col-md-12">
+      <div class="h1" style="font-size: 3rem;">Career Opportunities</div>
+    </div>
+    <div class="col-md-12">
+      <div class="h6">WE ARE ALWAYS ON THE HUNT FOR FRESH TALENT!</div>
+    </div>
+    <div class="col mb-5 pt-3 pb-5">
+      <a href="#exp" class="btn btn-outline-light explore ps-4 pe-4 ">Explore Us</a>
+      <a href="#exp" class="btn btn-outline-light explore ps-4 pe-4 ">Apply Now</a>
+    </div>
+  </div>
+</div>
+
+<!-- Buttuns int Or Job -->
+
+<div class="container-fluid text-center BtnJI p-5" id="exp" style="background-color: #262e30;;">
+  
+  <button class="Job-btn JI">Job Opnings</button>
+  <button class="Internship-btn JI">Internship</button>
+</div>
+
+
+<!-- Get NotiFide  -->
+<section class="Job">
+<div class="container-fluid  text-light p-5" style="background-color: #262e30;">
+<div class="container">
+    <div class="h1 text-center pb-4"> Projects <span style="color: #51c7e2;">Planner</span></div>
+</div>
+<div class="row INP">
+
+  <div class="col-md-12 text-center "> 
+    <div class="h4">Get Notified</div> 
+    <div class="pb-3" style="font-size: 10px;">Just fill this form, and this will make the task much easy.</div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="h3">Are You That Gifted Human We're After?</div>
+    <ul style="font-size: 12px;">
+      <li>As a Triwits employee, we provide you with the time and space you need to develop yourself</li>
+      <li>And to further expand and deepen your areas of expertise and interest.</li>
+      <li>You can join as</li>
+      <div class="ps-3">
+        <li>Designers</li>
+        <li>Front End Developers</li>
+        <li>UX Experts</li>
+        <li>Developer</li>
+        <li>Web Developers</li>
+        <li>Full Stack Developer</li>
+        <li>Social Media Managers</li>
+        <li>Graphic Designers </li>
+        <li>Account Managers</li>
+        <li>Sales & Marketing</li>
+        <li>Digital Marketing Executive</li>
+        <li>Business Development Associate(BDA)</li>
+        <li>Business Development Manager(BDM)</li>
+        <li>Content writing</li>
+        <li>HR</li>
+        <li>and many more experts in challenging projects.</li>
+      </div>
+      <li>Of course, we balance our hard work with plenty of play,</li>
+      <li>So we make sure there’s always time for relaxing outings and fun-filled parties between jobs.</li>
+      <li>If you feel up to the challenge and think you could teach us a trick or two.</li>
+      <li>Then don’t hesitate to contact us and let us know why we can’t do without you!</li>
+    </ul>
+    <div class="h3">What We Can Offer</div>
+    <ul style="font-size: 12px;">
+      <li>A sweet spot to work with team Triwits.</li>
+      <li>wealth of expertise and experience.</li>
+      <li>Personal guidance including growth plans and career opportunities.</li>
+      <li>Challenging tasks in customer projects and side projects.</li>
+      <li>Plenty of responsibility, freedom, and time for personal interests.</li>
+    </ul>
+  </div>
+
+
+    <div class="col-md-6">
+        <div class="row" >
+            <div class="col-md-12 p-3">
+              <input type="text" class="form-control" placeholder="Name" aria-label="Your name">
+            </div>
+            <div class="col-md-12 p-3 ">
+              <input type="text" class="form-control" placeholder="Email" aria-label="Your Email">
+            </div>
+            <div class="col-md-12 p-3">
+              <select class="form-select text-light" aria-label="Default select example" style="background: none;">
+                <option selected>Select Position</option>
+                <option value="1">Full Stack Devloper</option>
+                <option value="2">Sales and Markating</option>
+                <option value="3">Business Devlopment Manager</option>
+                <option value="4">HR</option>
+                <option value="5">Digital Markating</option>
+              </select>
+            </div>
+          
+            <div class="col-md-12 p-3">
+                <input type="file" style="padding-bottom: 5rem;" class="form-control text-light" placeholder="Click Here To Attach Resume" aria-label="Last name">
+              </div>
+              <div class="col-md-12 p-3">
+                <input type="number" class="form-control" placeholder="Number" aria-label="Your Number">
+              </div>
+              <div class="col-md-12 p-3">
+                <a href="#" class="btn btn-outline-dark" type="button" style="background-color: #51c7e2;"> SUBMIT</a>
+              </div>
+          </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- ===========Internship section ========== -->
+<section class="Internship">
+    <!-- Get NotiFide  -->
+<div class="container-fluid  text-light p-5" style="background-color: #262e30;">
+  <div class="container">
+      <div class="h1 text-center pb-4"> Projects <span style="color: #51c7e2;">Planner</span></div>
+  </div>
+  <div class="row INP">
+
+    <div class="col-md-12 text-center "> 
+      <div class="h4">Get Notified</div> 
+      <div class="pb-3" style="font-size: 10px;">Just fill this form, and this will make the task much easy.</div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="h3">Program Overview</div>
+      <ul style="font-size: 12px;">
+        <li>Program Length: 12 weeks, full time</li>
+        <li>Start date: Open throughout the year.</li>
+        <li>End date: 12 weeks after your joining.</li>
+        <li>Hours: 40 hours per week</li>
+        <li>Our paid 12-week internship program is open to current college juniors and seniors.</li>
+        <li>We also Provide Stipend after Completing the Internship period.</li>
+     </ul>
+      <div class="h3">Application Process</div>
+      <ul style="font-size: 12px;">
+        <li>Applications must be submitted by filling this form.</li>
+        <li>On a rolling basis, Talent Acquisition will follow up with applicants via email/ Telephony to confirm and ask for information that may include:</li>
+        <li>Dates student expects to be available to interview.</li>
+        <li>Areas of interest.</li>
+        <li>Any samples of applicable projects students have worked or want to work on at another internship or in a class that they are proud of and would like to share with us.</li>
+        <li>If selected, you will be invited to take part in interviews.</li>
+        <li>All interviews (first and second rounds) will take place on a rolling basis</li>
+        <li>If the criteria are met, students will be selected for the internship.</li>
+        <li>Our top-performing interns have a high potential of converting to future full time hires</li>
+        <li>We have developed a regular practice of hiring interns, who have high potential to join our company.</li>
+    </ul>
+    </div>
+
+
+      <div class="col-md-6">
+          <div class="row" >
+              <div class="col-md-12 p-3">
+                <input type="text" class="form-control" placeholder="Name" aria-label="Your name">
+              </div>
+              <div class="col-md-12 p-3 ">
+                <input type="text" class="form-control" placeholder="Email" aria-label="Your Email">
+              </div>
+              <div class="col-md-12 p-3">
+                <select class="form-select text-light" aria-label="Default select example" style="background: none;">
+                  <option selected>Select Position</option>
+                  <option value="1">Full Stack Devloper</option>
+                  <option value="2">Sales and Markating</option>
+                  <option value="3">Business Devlopment Manager</option>
+                  <option value="4">HR</option>
+                  <option value="5">Digital Markating</option>
+                </select>
+              </div>
+            
+              <div class="col-md-12 p-3">
+                  <input type="file" style="padding-bottom: 5rem;" class="form-control text-light" placeholder="Click Here To Attach Resume" aria-label="Last name">
+                </div>
+                <div class="col-md-12 p-3">
+                  <input type="number" class="form-control" placeholder="Number" aria-label="Your Number">
+                </div>
+                <div class="col-md-12 p-3">
+                  <a href="#" class="btn btn-outline-dark" type="button" style="background-color: #51c7e2;"> SUBMIT</a>
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+
+</section>
+<!-- Want to contact  -->
+<div class="container-fluid text-light text-center p-5 " id="CONTACT" style="background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url('img/triwits-logo.png') ;background-attachment: fixed;;">
+<div class="row p-5">
+  <div class="col-md-12  pb-5 pt-5">
+    <div class="h3 pb-3">Want to know more..</div>
+    <a href="#" id="CONTACT-btn" class="btn btn-outline-dark" style="background-color: #51c7e2; border: none;">CONTACT US</a>
+  </div>
+</div>
+</div>
+<!-- logos -->
+<div class="container-fluid p-2 bg-dark">
+<div class="d-flex bd-highlight ps-5 pe-5">
+  <div class="p-2 flex-grow-1 bd-highlight LOGOS" style="font-size: 1.5rem;">
+   <a href="https://in.linkedin.com/company/triwits"><i class="fa-brands fa-linkedin pe-3"></i></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthetriwits"><i class="fa-brands fa-twitter pe-3"></i></a>  <a href="https://www.facebook.com/triwitstech/timeline/?ref=hl"><i class="fa-brands fa-facebook-f pe-3"></i></a> <a href="https://www.instagram.com/thetriwits/"><i class="fa-brands fa-square-instagram pe-3"></i></a> <a href="https://api.whatsapp.com/send/?phone=919620030308&text=Hello&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp pe-3"></i></a>
+  </div>
+  <div class=" p-2 bd-highlight text-light "> Copyright @2023 All rights reserved [This template is made by Mr.Shahid-Nadaf</div>
+</div>
+</div>
+    </section>
+
+    <section class="Contact">
+
+    <div class="container-fluid text-light " style="background-color: #2f3738;">
+      <div class="h1 text-center p-5">Get In <span style="color: #51c7e2;">Touch</span></div>
+      <div class="container pb-5 INP ">
+          <div class="row">
+              <div class="col-md-6">
+                  <div class="row">
+                      <div class="col-md-12 p-3">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13972.924905095802!2d75.71206615976368!3d16.85854815145789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc6557ac695e77f%3A0xf13750f1fadc4489!2sTriwits%20Technologies%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1689059452674!5m2!1sen!2sin" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                      <div class="col-md-5">
+                          <div class="pb-2">Head Office :</div>
+                          <div class="" style="font-size: 9px;">Triwits Technologies Pvt. Ltd.,Panchavati colony, Solapur Ring Road, Vijayapura, Karnataka 586103</div>
+                          <div class="pt-4">Branch Office :</div>
+                          <div class="pt-4" style="font-size: 9px;">Triwits Technologies Pvt. Ltd.,91springboard JP Nagar, 5th Floor, 175 & 176, Bannerghatta Main Rd, Dollars Colony, Bengaluru, Karnataka 560076</div>
+                          </div>
+                      <div class="col-md-6">
+                          <div class="p">Branch Office :</div>
+                          <div class="" style="font-size: 9px;">Office no.1, Safalya Society Near Bhimale Garden, Salisbury Park Market Yard. Pune 411037</div> <br>
+                          <div class="" style="font-size: 9px;">
+                              <i class="fa-solid fa-phone pe-1"></i>  Sales & Support: +91-9620030302/08 <br> <br> 
+                              <i class="fa-solid fa-phone pe-1"></i>    Careers: +91-7829453367 <br> <br> 
+                              <i class="fa-solid fa-envelope pe-1"></i>  Sales & Support: reachus@triwits.com <br> <br>
+                              <i class="fa-solid fa-envelope pe-1"></i>    Careers: careers@triwits.com
+                          </div>
+                      </div>
+                      </div>
+                  </div>                    
+             
+              <div class="col-md-6">
+                  <div class="row" >
+                      <div class="col-md-12 p-3">
+                        <input type="text" class="form-control" placeholder="Name" aria-label="Your name">
+                      </div>
+                      <div class="col-md-12 p-3 ">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Your Email">
+                      </div>
+                      <div class="col-md-12 p-3">
+                          <input type="text" class="form-control" placeholder="Subject" aria-label="Your Subject">
+                      </div>
+                    
+                      <div class="col-md-12 p-3">
+                          <input type="text" style="padding-bottom: 5rem;" class="form-control text-light" placeholder="Message" aria-label="Last name">
+                        </div>
+                        <div class="col-md-12 p-3">
+                          <input type="number" class="form-control" placeholder="Number" aria-label="Your Number">
+                        </div>
+                        <div class="col-md-12 p-3">
+                          <a href="#" class="btn btn-outline-dark" type="button" style="background-color: #51c7e2;"> SUBMIT</a>
+                        </div>
+                    </div>
+              </div>
+          </div>
+          </div>
+        </div>
+      
+        <!-- logos -->
+<div class="container-fluid p-2 bg-dark">
+  <div class="d-flex bd-highlight ps-5 pe-5">
+    <div class="p-2 flex-grow-1 bd-highlight LOGOS" style="font-size: 1.5rem;">
+     <a href="https://in.linkedin.com/company/triwits"><i class="fa-brands fa-linkedin pe-3"></i></a> <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fthetriwits"><i class="fa-brands fa-twitter pe-3"></i></a>  <a href="https://www.facebook.com/triwitstech/timeline/?ref=hl"><i class="fa-brands fa-facebook-f pe-3"></i></a> <a href="https://www.instagram.com/thetriwits/"><i class="fa-brands fa-square-instagram pe-3"></i></a> <a href="https://api.whatsapp.com/send/?phone=919620030308&text=Hello&type=phone_number&app_absent=0"><i class="fa-brands fa-square-whatsapp pe-3"></i></a>
+    </div>
+    <div class=" p-2 bd-highlight text-light "> Copyright @2023 All rights reserved [This template is made by Mr.Shahid-Nadaf</div>
+  </div>
+</div>
+    </section>
+
+<script>
+    $(document).ready(function(){
+        $(".Poject").hide();
+        $(".Services").hide();
+        $(".Contact").hide();
+        $(".Carees").hide();
+        document.querySelector(".Home").style.color= 'cyan'
+
+        $(".home-btn").click(function(){
+        $(".Poject").hide();
+        $(".Services").hide();
+        $(".Carees").hide();
+        $(".Contact").hide();
+        $(".Home").show();
+        document.querySelector(".home-btn").style.color= 'cyan'
+        document.querySelector(".Poject-btn").style.color= 'white'
+        document.querySelector(".Services-btn").style.color= 'white'
+        document.querySelector(".Carees-btn").style.color= 'white'
+        document.querySelector(".Contact-btn").style.color= 'white'
+        });
+
+        $(".Services-btn").click(function(){
+        $(".Poject").hide();
+        $(".Services").show();
+        $(".Carees").hide();
+        $(".Contact").hide();
+        $(".Home").hide();
+
+        document.querySelector(".home-btn").style.color= 'white'
+        document.querySelector(".Poject-btn").style.color= 'white'
+        document.querySelector(".Services-btn").style.color= 'cyan'
+        document.querySelector(".Carees-btn").style.color= 'white'
+        document.querySelector(".Contact-btn").style.color= 'white'
+
+        });
+
+
+        $(".Poject-btn").click(function(){
+        $(".Poject").show();
+        $(".Services").hide();
+        $(".Carees").hide();
+        $(".Contact").hide();
+        $(".Home").hide();
+        document.querySelector(".home-btn").style.color= 'white'
+        document.querySelector(".Poject-btn").style.color= 'cyan'
+        document.querySelector(".Services-btn").style.color= 'white'
+        document.querySelector(".Carees-btn").style.color= 'white'
+        document.querySelector(".Contact-btn").style.color= 'white'
+        });
+
+        $(".Carees-btn").click(function(){
+        $(".Poject").hide();
+        $(".Carees").show();
+        $(".Services").hide();
+        $(".Contact").hide();
+        $(".Home").hide();
+
+        document.querySelector(".home-btn").style.color= 'white'
+        document.querySelector(".Poject-btn").style.color= 'white'
+        document.querySelector(".Services-btn").style.color= 'white'
+        document.querySelector(".Carees-btn").style.color= 'cyan'
+        document.querySelector(".Contact-btn").style.color= 'white'
+        });
+        $(".Contact-btn").click(function(){
+        $(".Poject").hide();
+        $(".Carees").hide();
+        $(".Services").hide();
+        $(".Contact").show();
+        $(".Home").hide();
+
+        document.querySelector(".home-btn").style.color= 'white'
+        document.querySelector(".Poject-btn").style.color= 'white'
+        document.querySelector(".Services-btn").style.color= 'white'
+        document.querySelector(".Carees-btn").style.color= 'white'
+        document.querySelector(".Contact-btn").style.color= 'cyan'
+        });
+    });
+</script>
+
+<!-- home js  -->
+<script>
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    autoplay:true,
+    autoplayTimeout:1500,
+    nav:false,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+
+</script>
+
+<!-- Career buttons Script   -->
+<script>
+  $(document).ready(function(){
+        $(".Internship").hide();
+
+       
+        $(".Job-btn").click(function(){
+        $(".Internship").hide();
+        $(".Job").show();
+        });
+
+        $(".Internship-btn").click(function(){
+        $(".Internship").show();
+        $(".Job").hide();
+        });
+
+        $("#CONTACT-btn").click(function(){
+          $(".Poject").hide();
+        $(".Carees").hide();
+        $(".Services").hide();
+        $(".Contact").show();
+        $(".Contact-btn").show();
+        $(".Home").hide();
+        })
+       
+        $("#CONTACT-btn1").click(function(){
+          $(".Poject").hide();
+        $(".Carees").hide();
+        $(".Services").hide();
+        $(".Contact").show();
+        $(".Contact-btn").show();
+        $(".Home").hide();
+        })
+        $("#CONTACT-btn2").click(function(){
+          $(".Poject").hide();
+        $(".Carees").hide();
+        $(".Services").hide();
+        $(".Contact").show();
+        $(".Contact-btn").show();
+        $(".Home").hide();
+        })
+        $("#CONTACT-btn3").click(function(){
+          $(".Poject").hide();
+        $(".Carees").hide();
+        $(".Services").hide();
+        $(".Contact").show();
+        $(".Home").hide();
+        })
+
+  });
+</script>
+
+<!-- navabr btn  -->
+<script>
+function show() {
+		document.getElementById('Navbar').style.display="block";
+		document.getElementById('NAVBARbtn').style.display="none";
+	}
+</script>
+</body>
+</html>
